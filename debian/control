@@ -1,0 +1,22 @@
+Source: runescape
+Section: non-free/games
+Priority: optional
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Uploaders: Carlos Donizete Froes <coringao@riseup.net>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.8
+Homepage: https://www.runescape.com
+Vcs-Git: https://anonscm.debian.org/git/pkg-games/runescape.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-games/runescape.git
+
+Package: runescape
+Architecture: all
+Depends: default-jre, p7zip-full, zenity, ${misc:Depends}
+Description: Multiplayer online game set in a fantasy world
+ Explore in an open and mysterious world with ravaged landscapes
+ and sinister powers.
+ .
+ Having chosen an adventurer, players are free to find their role
+ within it: to live by the sword and spells facing hundreds
+ of enemies, to further the storyline in quests, or to train
+ in any of a number of skills.
