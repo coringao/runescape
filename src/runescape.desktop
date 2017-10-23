@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Runescape
+Comment=Multiplayer online game set in a fantasy world
+Exec=runescape
+Keywords=game;adventure;
+Terminal=false
+Type=Application
+Icon=runescape.xpm
+Categories=Application;Game;
