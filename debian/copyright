@@ -3,11 +3,11 @@ Upstream-Name: runescape
 Source: https://github.com/coringao/runescape
 
 Files: *
-Copyright: 2016 Carlos Donizete Froes <coringao@riseup.net>
+Copyright: 2016-2017 Carlos Donizete Froes <coringao@riseup.net>
 License: BSD-2-Clause
 
 Files: debian/*
-Copyright: 2016 Carlos Donizete Froes <coringao@riseup.net>
+Copyright: 2016-2017 Carlos Donizete Froes <coringao@riseup.net>
 License: BSD-2-Clause
 
 License: BSD-2-Clause

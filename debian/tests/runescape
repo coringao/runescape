@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+sourcedir=debian/tests/project
+
+rundir=${ADTTMP}
+
+cp -a ${sourcedir}/* ${rundir}
+cd ${rundir}
+make > ${ADT_ARTIFACTS}/make.output 2>&1

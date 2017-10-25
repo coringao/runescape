@@ -1,9 +1,8 @@
 Name: Runescape
-Homepage: https://www.runescape.com
+Homepage: https://github.com/coringao/runescape/wiki
 Repository: https://github.com/coringao/runescape.git
 Repository-Browse: https://github.com/coringao/runescape
 Bug-Submit: https://github.com/coringao/runescape/issues
-Reference:
- - Title: 'Runescape - Multiplayer online game set in a fantasy world'
- - Author: Carlos Donizete Froes [a.k.a coringao]
- - Contact: coringao@riseup.net
+Title: 'Runescape - Multiplayer online game set in a fantasy world'
+Author:
+ - Copyright 2016-2017 Carlos Donizete Froes [a.k.a coringao]

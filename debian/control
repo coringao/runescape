@@ -3,9 +3,9 @@ Section: non-free/games
 Priority: optional
 Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
 Uploaders: Carlos Donizete Froes <coringao@riseup.net>
-Build-Depends: debhelper (>=9)
-Standards-Version: 3.9.8
-Homepage: https://www.runescape.com
+Build-Depends: debhelper (>=10)
+Standards-Version: 4.1.1
+Homepage: https://github.com/coringao/runescape/wiki
 Vcs-Git: https://anonscm.debian.org/git/pkg-games/runescape.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-games/runescape.git
 
