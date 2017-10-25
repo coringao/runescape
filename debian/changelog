@@ -7,10 +7,11 @@ runescape (0.2-1) unstable; urgency=medium
     + Bump debhelper compat to 10
     + Declare compliance with Debian Policy: 4.1.1
   * Fixed d/upstream/metadata
+  * Fixed d/watch
   * Updated d/copyright
   * Added autopkgtest: Running the tests in directory 'd/tests/project'
 
- -- Carlos Donizete Froes <coringao@riseup.net>  Tue, 24 Oct 2017 15:17:08 -0200
+ -- Carlos Donizete Froes <coringao@riseup.net>  Wed, 25 Oct 2017 21:03:15 -0200
 
 runescape (0.1-4) unstable; urgency=medium
 
