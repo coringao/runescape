@@ -10,7 +10,7 @@ ICNDIR = $(PREFIX)/share/pixmaps
 APPDIR = $(PREFIX)/share/applications
 
 SCRIPT = runescape.sh
-ICON = runescape.xpm
+ICON = runescape.png
 DESKTOP = runescape.desktop
 
 CP = cp -r
