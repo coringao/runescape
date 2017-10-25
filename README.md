@@ -1,5 +1,8 @@
-Runescape for GNU/Linux
-=======================
+Runescape for Unofficial GNU/Linux
+=========================================
+
+[Runescape](https://runescape.com) is a massively multiplayer online role-playing game 
+created by [Jagex Ltd](https://jagex.com).
 
 **Script (executable)**
 -----------------------
