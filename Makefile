@@ -1,5 +1,5 @@
 PACKAGE = Runescape
-VERSION = 0.1
+VERSION = 0.2
 EXE = runescape
 
 SRCDIR = src
@@ -31,7 +31,7 @@ clean:
 install: all
 	@$(ECHO) "Copying executable script to directory $(GAMEDIR)"
 	@$(MD) "$(GAMEDIR)"
-	@$(CP) "$(EXE)" "$(GAMEDIR)"	
+	@$(CP) "$(EXE)" "$(GAMEDIR)"
 	@$(ECHO) "Copying files in application menu entry"
 	@$(MD) "$(ICNDIR)"
 	@$(CP) "$(SRCDIR)/$(ICON)" "$(ICNDIR)"
