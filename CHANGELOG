@@ -2,7 +2,9 @@ version: 0.2
   * Fixed desktop file
   * Added initial file transfer progress bar
   * Updated game executable script
-  * Changed makefile version
+  * Makefile version updated to 0.2
+  * Removed official icon in format (xpm)
+  * Added official icon in format (png) size 256 pixels
 
 version: 0.1
   * Adding the official icon 128 pixels
