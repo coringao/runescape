@@ -1,3 +1,9 @@
-v.0.1 (15-07-2016)
-    - Adding the official icon 128 pixels.
-    - Script that start the game in selected language.
+version: 0.2
+  * Fixed desktop file
+  * Added initial file transfer progress bar
+  * Updated game executable script
+  * Changed makefile version
+
+version: 0.1
+  * Adding the official icon 128 pixels
+  * Script that start the game in selected language
