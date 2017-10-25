@@ -22,7 +22,7 @@ if [ ! -d $GAME ]; then
 	mkdir $TEMP
 	cd $TEMP
 
-# Downloading the file in the temporary directory	
+# Downloading the file in the temporary directory
 	LANG=C wget $LINK --progress=bar:force:noscroll --limit-rate 100k 2>&1 \
 	| stdbuf -i0 -o0 -e0 tr '>' '\n' \
 	| stdbuf -i0 -o0 -e0 sed -rn 's/^.*\<([0-9]+)%\[.*$/\1/p' \
