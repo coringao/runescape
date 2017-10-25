@@ -1,3 +1,3 @@
 # Control file for Debian 'autopkgtests'.
-Tests: runescape
-Depends: default-jre, p7zip-full, zenity
+Test-Command: /bin/true
+Depends: @
