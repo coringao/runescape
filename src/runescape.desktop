@@ -2,8 +2,8 @@
 Name=Runescape
 Comment=Multiplayer online game set in a fantasy world
 Exec=runescape
-Keywords=game;adventure;
+Keywords=game;adventure;MMORPG;multiplayer;online
 Terminal=false
 Type=Application
-Icon=runescape.xpm
-Categories=Application;Game;
+Icon=runescape
+Categories=Game;AdventureGame;RolePlaying;
