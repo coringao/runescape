@@ -30,7 +30,7 @@ To use the script, you will need to have the following dependencies installed:
 **Installation dependency: Debian/Ubuntu**
 ------------------------------------------
 
-    # apt install make default-jre p7zip-full zenity
+    # apt install default-jre make p7zip-full zenity
 
 When all these dependencies have installed, simply run the script.
 
