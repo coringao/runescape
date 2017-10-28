@@ -5,8 +5,8 @@
 #	that can be found in the LICENSE file.
 #	Source code and contact info at https://github.com/coringao/runescape
 #
-# Game:     Runescape
-# Date:     October/2017
+# Script Name:	runescape.sh
+# Update Date:	October/2017
 #
 # Download Mac Client
 LINK="https://www.runescape.com/downloads/runescape.dmg"
@@ -15,11 +15,10 @@ LINK="https://www.runescape.com/downloads/runescape.dmg"
 GAME="$HOME/jagexcache/runescape/bin"
 
 # Temporary directory will be created and after installation this directory will be deleted
-TEMP="$HOME/.rs-temp"
+TEMP="$(mktemp -d /tmp/runescape.XXXXX)"
 
 if [ ! -d $GAME ]; then
 	mkdir -p $GAME
-	mkdir $TEMP
 	cd $TEMP
 
 # Downloading the file in the temporary directory
@@ -31,8 +30,6 @@ if [ ! -d $GAME ]; then
 # Uncompressing the file in the temporary directory
 	7z e runescape.dmg > /dev/null
 	mv jagexappletviewer.jar $GAME
-        cd
-	rm -rf $TEMP
 fi
 
 # Running the language selection window to start the game
@@ -70,4 +67,8 @@ if echo "$SELECT" | grep $"Spanish"; then
 	-Dcom.jagex.config=http://www.runescape.com/l=6/l=en/jav_config.ws \
 	jagexappletviewer "$GAME" > /dev/null
 fi
+
+# Removing temporary directory
+rm -rf $TEMP
+
 exit 0
