@@ -1,7 +1,7 @@
 version: 0.2
   * Fixed desktop file
   * Added initial file transfer progress bar
-  * Updated game executable script
+  * Replaced command line to create temporary directory
   * Makefile version updated to 0.2
   * Removed official icon in format (xpm)
   * Added official icon in format (png) size 256 pixels
