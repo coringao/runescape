@@ -1,6 +1,6 @@
 runescape (0.2-1) unstable; urgency=medium
 
-  * New upstream release
+  * New upstream release (Closes: #866227, #879784)
   * Switch to compat level 10
   * debian/control:
     + Changed homepage link
@@ -10,10 +10,8 @@ runescape (0.2-1) unstable; urgency=medium
   * Fixed d/watch
   * Updated d/copyright
   * Added autopkgtest
-  * Changed icon format and fixed bug in desktop file (Closes: Bug#866227)
-  * Replaced command line to create temporary directory (Closes: Bug#879784)
 
- -- Carlos Donizete Froes <coringao@riseup.net>  Sat, 28 Oct 2017 19:18:09 -0200
+ -- Carlos Donizete Froes <coringao@riseup.net>  Sun, 29 Oct 2017 21:35:55 -0200
 
 runescape (0.1-4) unstable; urgency=medium
 
