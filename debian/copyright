@@ -1,6 +1,14 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: runescape
 Source: https://github.com/coringao/runescape
+Disclaimer:
+ This package is not part of the Debian distribution. It is provided in
+ the non-free archive area as a convenience to Debian users.
+ The contents of this package can not be distributed as part of Debian
+ distribution because the license mentioned does not allow commercial use.
+Autobuilding:
+ According the license there are no problems to build this software
+ on several architectures automatically and distributing it.
 
 Files: *
 Copyright: 2016-2017 Carlos Donizete Froes <coringao@riseup.net>
