@@ -1,3 +1,11 @@
+runescape (0.2-2) unstable; urgency=medium
+
+  * Team upload
+  * Added 'XS-Autobuild: yes' in debian/control
+  * Notification of the 'disclaimer' and about 'autobuilding' in d/copyright
+
+ -- Carlos Donizete Froes <coringao@riseup.net>  Wed, 08 Nov 2017 01:19:56 -0200
+
 runescape (0.2-1) unstable; urgency=medium
 
   * New upstream release (Closes: #866227, #879784)
