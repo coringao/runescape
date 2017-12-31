@@ -1,17 +1,12 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: runescape
 Source: https://github.com/coringao/runescape
-Disclaimer:
- This package is not part of the Debian distribution. It is provided in the
- non-free file area as a convenience for Debian users.
- The contents of this package is an unofficial installer of the Runescape
- client and distributed for non-commercial and non-profit use.
- This package does NOT contain official Runescape client
- [https://www.runescape.com] itself as this would violate copyright laws
- and the wishes of Jagex Ltd authors [https://www.jagex.com/terms].
 Autobuilding:
- According to the adopted license, there is no problem to create
- this software in various architectures automatically and distribute it.
+ According the license there are no problems to build this software on
+ several architectures automatically and distributing it.
+ .
+ This package is not part of the Debian distribution. It is provided in
+ the non-free archive area as a convenience to Debian users.
 
 Files: *
 Copyright: 2016-2017 Carlos Donizete Froes <coringao@riseup.net>
