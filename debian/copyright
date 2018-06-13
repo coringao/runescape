@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: runescape
-Source: https://github.com/coringao/runescape
-Autobuilding:
+Source: https://gitlab.com/coringao/runescape
+Disclaimer:
  According the license there are no problems to build this software on
  several architectures automatically and distributing it.
  .
@@ -13,7 +13,7 @@ Copyright: 2016-2017 Carlos Donizete Froes <coringao@riseup.net>
 License: BSD-2-Clause
 
 Files: debian/*
-Copyright: 2016-2017 Carlos Donizete Froes <coringao@riseup.net>
+Copyright: 2016-2018 Carlos Donizete Froes <coringao@riseup.net>
 License: BSD-2-Clause
 
 License: BSD-2-Clause
