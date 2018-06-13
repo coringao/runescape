@@ -1,13 +1,19 @@
 runescape (0.2-2) unstable; urgency=medium
 
-  * Added the 'XS-Autobuild: yes' header to d/control
-  * Added a note about autobuilding to d/copyright
+  * Switch to compat level 11
   * debian/control:
-    + Changed Vcs-* URLs to salsa.d.o
     + Bump debhelper compat to 11
-    + Declare compliance with Debian Policy: 4.1.3
+    + Declare compliance with Debian Policy: 4.1.4
+    + Changed homepage link GitLab
+    + Move Vcs URLs to salsa.d.g
+  * debian/copyright:
+    + Update source URL move to GitLab
+    + Added a short comment as legal notice
+    + Year updated on 'Files: debian/*'
+  * Updated d/upstream/metadata URLs move to GitLab
+  * Updated d/watch file upstream move to GitLab
 
- -- Carlos Donizete Froes <coringao@riseup.net>  Sun, 31 Dec 2017 16:05:30 -0200
+ -- Carlos Donizete Froes <coringao@riseup.net>  Wed, 13 Jun 2018 17:00:06 -0300
 
 runescape (0.2-1) unstable; urgency=medium
 
