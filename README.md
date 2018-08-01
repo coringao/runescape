@@ -21,11 +21,7 @@ that will start playing: **English, French, Spanish, Portuguese or German**.
 
 To use the script, you will need to have the following dependencies installed:
 
-- 7zip
-
-- OpenJDK
-
-- Zenity
+- 7zip, OpenJDK, Zenity
 
 **Installation dependency: Debian/Ubuntu**
 ------------------------------------------
@@ -48,6 +44,7 @@ License
 
 > Use of this script is governed by a BSD 2-clause license that can be found
 > in the LICENSE file.
+>
 > Source code and contact info at https://gitlab.com/coringao/runescape
 
-Copyright (C) 2016-2018 Carlos Donizete Froes [a.k.a coringao]
+* Copyright (c) 2016-2018 Carlos Donizete Froes [a.k.a coringao]
