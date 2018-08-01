@@ -1,8 +1,8 @@
 Runescape for Unofficial GNU/Linux
-=========================================
+==================================
 
-[Runescape](https://runescape.com) is a massively multiplayer online role-playing game 
-created by [Jagex Ltd](https://jagex.com).
+[Runescape](https://runescape.com) is a massively multiplayer online
+role-playing game created by [Jagex Ltd](https://jagex.com).
 
 **Script (executable)**
 -----------------------
@@ -46,8 +46,8 @@ Next you need to compile this release.
 License
 =======
 
-Copyright (C) 2016-2017 Carlos Donizete Froes [a.k.a coringao]
+> Use of this script is governed by a BSD 2-clause license that can be found
+> in the LICENSE file.
+> Source code and contact info at https://gitlab.com/coringao/runescape
 
-Use of this script is governed by a BSD 2-clause license that can be found in the LICENSE file.
-
-Source code and contact info at https://github.com/coringao/runescape
+Copyright (C) 2016-2018 Carlos Donizete Froes [a.k.a coringao]
