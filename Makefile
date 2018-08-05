@@ -1,5 +1,5 @@
-PACKAGE = Runescape
-VERSION = 0.2
+PACKAGE = Old School Runescape
+VERSION = 0.3
 EXE = runescape
 
 SRCDIR = src
