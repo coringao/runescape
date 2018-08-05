@@ -3,16 +3,17 @@
 #	Copyright (C) 2016-2017 Carlos Donizete Froes <coringao@riseup.net>
 #	Use of this script is governed by a BSD 2-clause license
 #	that can be found in the LICENSE file.
-#	Source code and contact info at https://github.com/coringao/runescape
+#	Source code and contact info at https://gitlab.com/coringao/runescape
 #
 # Script Name:	runescape.sh
-# Update Date:	October/2017
+# Update Date:	August/2018
+# Edited version: '0.3'
 #
-# Download Mac Client
-LINK="https://www.runescape.com/downloads/runescape.dmg"
+# Download Mac Client - Old School Runescape
+LINK="https://runescape.com/downloads/oldschool.dmg"
 
 # Directory Runescape
-GAME="$HOME/jagexcache/runescape/bin"
+GAME="$HOME/.local/share/runescape"
 
 # Temporary directory will be created and after installation this directory will be deleted
 TEMP="$(mktemp -d /tmp/runescape.XXXXX)"
@@ -34,38 +35,20 @@ fi
 
 # Running the language selection window to start the game
 LANG=C SELECT=`zenity --title=RuneScape --list \
---width=250 --height=250 --radiolist --column "AT" \
---column "Select the language" \
-	TRUE  "English" \
-	FALSE "French" \
-	FALSE "German"\
-	FALSE "Portuguese"\
-	FALSE "Spanish" 2>/dev/null `
+--width=250 --height=200 --radiolist --column "AT" \
+--column "START GAME" \
+	TRUE  "Old School Runescape" \
+	FALSE "BSD Licenses" 2>/dev/null `
 
-if echo "$SELECT" | grep $"English"; then
-	java -Xmx512m -Xms512m -Djava.class.path="$GAME/jagexappletviewer.jar" \
-	-Dcom.jagex.config=http://www.runescape.com/k=3/l=en/jav_config.ws \
+if echo "$SELECT" | grep $"Old School Runescape"; then
+	java --add-opens java.base/java.lang=ALL-UNNAMED \
+	-Xmx512m -Xms512m -Djava.class.path="$GAME/jagexappletviewer.jar" \
+	-Dcom.jagex.config=http://oldschool.runescape.com/jav_config.ws \
 	jagexappletviewer "$GAME" > /dev/null
 fi
-if echo "$SELECT" | grep $"French"; then
-	java -Xmx512m -Xms512m -Djava.class.path="$GAME/jagexappletviewer.jar" \
-	-Dcom.jagex.config=http://www.runescape.com/l=2/l=en/jav_config.ws \
-	jagexappletviewer "$GAME" > /dev/null
-fi
-if echo "$SELECT" | grep $"German"; then
-	java -Xmx512m -Xms512m -Djava.class.path="$GAME/jagexappletviewer.jar" \
-	-Dcom.jagex.config=http://www.runescape.com/l=1/l=en/jav_config.ws \
-	jagexappletviewer "$GAME" > /dev/null
-fi
-if echo "$SELECT" | grep $"Portuguese"; then
-	java -Xmx512m -Xms512m -Djava.class.path="$GAME/jagexappletviewer.jar" \
-	-Dcom.jagex.config=http://www.runescape.com/l=3/l=en/jav_config.ws \
-	jagexappletviewer "$GAME" > /dev/null
-fi
-if echo "$SELECT" | grep $"Spanish"; then
-	java -Xmx512m -Xms512m -Djava.class.path="$GAME/jagexappletviewer.jar" \
-	-Dcom.jagex.config=http://www.runescape.com/l=6/l=en/jav_config.ws \
-	jagexappletviewer "$GAME" > /dev/null
+if echo "$SELECT" | grep $"BSD Licenses"; then
+        LANG=C zenity --title="LICENSE" --text-info --width=640 --height=480 \
+        --filename="/usr/share/common-licenses/BSD" 2>/dev/null
 fi
 
 # Removing temporary directory
