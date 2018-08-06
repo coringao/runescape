@@ -23,13 +23,13 @@ if [ ! -d $GAME ]; then
 	cd $TEMP
 
 # Downloading the file in the temporary directory
-	LANG=C wget $LINK --progress=bar:force:noscroll --limit-rate 100k 2>&1 \
+	LANG=C wget $LINK --progress=bar:force:noscroll --limit-rate 200k 2>&1 \
 	| stdbuf -i0 -o0 -e0 tr '>' '\n' \
 	| stdbuf -i0 -o0 -e0 sed -rn 's/^.*\<([0-9]+)%\[.*$/\1/p' \
 	| zenity --progress --auto-close --auto-kill 2>/dev/null
 
 # Uncompressing the file in the temporary directory
-	7z e runescape.dmg > /dev/null
+	7z e oldschool.dmg > /dev/null
 	mv jagexappletviewer.jar $GAME
 fi
 
@@ -38,13 +38,13 @@ LANG=C SELECT=`zenity --title=RuneScape --list \
 --width=250 --height=200 --radiolist --column "AT" \
 --column "START GAME" \
 	TRUE  "Old School Runescape" \
-	FALSE "BSD Licenses" 2>/dev/null `
+	FALSE "BSD Licenses" 2>/dev/null`
 
 if echo "$SELECT" | grep $"Old School Runescape"; then
 	java --add-opens java.base/java.lang=ALL-UNNAMED \
 	-Xmx512m -Xms512m -Djava.class.path="$GAME/jagexappletviewer.jar" \
 	-Dcom.jagex.config=http://oldschool.runescape.com/jav_config.ws \
-	jagexappletviewer "$GAME" > /dev/null
+	jagexappletviewer "$GAME" 2>/dev/null
 fi
 if echo "$SELECT" | grep $"BSD Licenses"; then
         LANG=C zenity --title="LICENSE" --text-info --width=640 --height=480 \
