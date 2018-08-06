@@ -45,9 +45,7 @@ License
 
 > Use of this script is governed by a BSD 2-clause license that can be found
 > in the LICENSE file. We encourage new contributors to distribute files
-> under this license.
->
-> Source code and contact info at https://gitlab.com/coringao/runescape
+> under this license. Source code and contact info at https://gitlab.com/coringao/runescape
 
 * Copyright (c) 1999-2018 Jagex Games Ltd.
 * Copyright (c) 2016-2018 Carlos Donizete Froes [a.k.a coringao]
