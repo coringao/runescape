@@ -1,3 +1,9 @@
+version: 0.3
+  * Makefile version updated to 0.3
+  * Changed version of 'Runescape' to 'Old School Runescape'
+  * Fixed bug in java 9/10
+  * Updated game executable script
+
 version: 0.2
   * Fixed desktop file
   * Added initial file transfer progress bar
