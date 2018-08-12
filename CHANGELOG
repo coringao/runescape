@@ -1,8 +1,8 @@
-version: 0.3.1
+version: 0.4
   * Created the game manpage
   * Changed script execution functions
   * Replaced icon in png format
-  * Makefile version updated to 0.3.1
+  * Makefile version updated
 
 version: 0.3
   * Makefile version updated to 0.3
