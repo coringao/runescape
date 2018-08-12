@@ -2,7 +2,7 @@
 Name=Runescape
 Comment=Multiplayer online game set in a fantasy world
 Exec=runescape
-Keywords=game;adventure;MMORPG;multiplayer;online
+Keywords=game;adventure;MMORPG;multiplayer;online;
 Terminal=false
 Type=Application
 Icon=runescape
