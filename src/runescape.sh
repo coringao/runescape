@@ -7,7 +7,7 @@
 #
 # Script Name:	runescape.sh
 # Update Date:	August/2018
-# Edited version: '0.3.1'
+# Edited version: '0.4'
 #
 # Download Mac Client - Old School Runescape
 LINK="https://runescape.com/downloads/oldschool.dmg"
