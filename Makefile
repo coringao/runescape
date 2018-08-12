@@ -1,5 +1,5 @@
 PACKAGE = Old School Runescape
-VERSION = 0.3.1
+VERSION = 0.4
 EXE = runescape
 
 SRCDIR = src
@@ -25,7 +25,7 @@ all:
 	@$(ECHO) "Created executable script successfully"
 
 clean:
-	@$(RM) "$(EXE)"
+	rm -f runescape
 	@$(ECHO) "Removed script executable successfully"
 
 install: all
