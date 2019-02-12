@@ -7,6 +7,7 @@ version: 0.5
     - Zenity script command removed
     - Removed the p7zip-full package for extracting the .dmg file
     - Added warn flag to fix java related errors
+  * Dropping java runtime information
   * Update in release version
 
 version: 0.4
