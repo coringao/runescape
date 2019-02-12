@@ -16,9 +16,8 @@ to release the JVM with the game client runescape to play regularly.
 **Dependencies**
 ----------------
 
-To use the script, you will need to have the following dependencies installed:
-
-- **OpenJDK**, **Wget**
+To use the script, you will need to have the following
+dependencies installed: **OpenJDK** and **Wget**
 
 **Installation dependency: Debian/Ubuntu**
 ------------------------------------------
