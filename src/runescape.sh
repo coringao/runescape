@@ -9,8 +9,8 @@
 # Update Date:	February/2019
 # Edited version: '0.4'
 #
-# Download Mac Client - Old School Runescape
-LINK="https://runescape.com/downloads/oldschool.dmg"
+# Download Client - Old School Runescape
+LINK="https://oldschool.runescape.com/downloads/jagexappletviewer.jar"
 
 # Hidden directory Runescape
 GAME="$HOME/.local/share/runescape"
@@ -23,22 +23,16 @@ if [ ! -d $GAME ]; then
 	mkdir -p $GAME
 	cd $TEMP
 
-# Progress bar: Downloading the file in the temporary directory
-	LANG=C wget $LINK --progress=bar:force:noscroll --limit-rate 200k 2>&1 \
-	| stdbuf -i0 -o0 -e0 tr '>' '\n' \
-	| stdbuf -i0 -o0 -e0 sed -rn 's/^.*\<([0-9]+)%\[.*$/\1/p' \
-	| zenity --progress --auto-close --auto-kill 2>/dev/null
-
-# Uncompressing the file in the temporary directory
-	7z e oldschool.dmg > /dev/null
+# Downloading the file in the temporary directory
+	LANG=C wget $LINK 2>/dev/null
 	mv jagexappletviewer.jar $GAME
 fi
 
 # Running the game
-        java --add-opens java.base/java.lang=ALL-UNNAMED -Xmx512m -Xms512m \
+        java --add-opens='java.base/java.lang=ALL-UNNAMED' -Xmx512m -Xms512m \
         -Djava.class.path="$GAME/jagexappletviewer.jar" \
 	-Dcom.jagex.config=http://oldschool.runescape.com/jav_config.ws \
-	jagexappletviewer "$GAME" 2>/dev/null
+	--illegal-access='warn' jagexappletviewer "$GAME" 2>/dev/null
 
 # Removing temporary directory
         rm -rf $TEMP
