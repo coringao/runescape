@@ -1,3 +1,14 @@
+version: 0.5
+  * Replaced by official game name and icon
+  * Updated copyright years
+  * Improvements to the executable script:
+    - Replaced the link to download the .jar file directly
+    - Speed limit flag removed in wget option
+    - Zenity script command removed
+    - Removed the p7zip-full package for extracting the .dmg file
+    - Added warn flag to fix java related errors
+  * Update in release version
+
 version: 0.4
   * Created the game manpage
   * Changed script execution functions
