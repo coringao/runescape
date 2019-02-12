@@ -29,12 +29,12 @@ if [ ! -d $GAME ]; then
 fi
 
 # Running the game
-        java --add-opens java.base/java.lang=ALL-UNNAMED -Xmx512m -Xms512m \
-        -Djava.class.path="$GAME/jagexappletviewer.jar" \
-        -Dcom.jagex.config=http://oldschool.runescape.com/jav_config.ws \
-        jagexappletviewer "$GAME" > /dev/null 2>&1
+	java --add-opens java.base/java.lang=ALL-UNNAMED -Xmx512m -Xms512m \
+	-Djava.class.path="$GAME/jagexappletviewer.jar" \
+	-Dcom.jagex.config=http://oldschool.runescape.com/jav_config.ws \
+	jagexappletviewer "$GAME" > /dev/null 2>&1
 
 # Removing temporary directory
-        rm -rf $TEMP
+	rm -rf $TEMP
 
 exit 0
