@@ -1,12 +1,12 @@
 #!/bin/bash
 #
-#	Copyright (c) 2016-2018, Carlos Donizete Froes <coringao@riseup.net>
+#	Copyright (c) 2016-2019, Carlos Donizete Froes <coringao@riseup.net>
 #	Use of this script is governed by a BSD 2-clause license
 #	that can be found in the LICENSE file.
 #	Source code and contact info at https://gitlab.com/coringao/runescape
 #
 # Script Name:	runescape.sh
-# Update Date:	August/2018
+# Update Date:	February/2019
 # Edited version: '0.4'
 #
 # Download Mac Client - Old School Runescape
