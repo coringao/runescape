@@ -18,12 +18,12 @@ to release the JVM with the game client runescape to play regularly.
 
 To use the script, you will need to have the following dependencies installed:
 
-- **7zip**, **OpenJDK**, **Zenity**
+- **OpenJDK**, **Wget**
 
 **Installation dependency: Debian/Ubuntu**
 ------------------------------------------
 
-    # apt install default-jre make p7zip-full zenity
+    # apt install default-jre make wget
 
 When all these dependencies have installed, simply run the script.
 
@@ -48,5 +48,5 @@ License
 > under this license. Source code and contact info at
 > https://gitlab.com/coringao/runescape
 
-* Copyright (c) 1999-2018 Jagex Games Ltd.
-* Copyright (c) 2016-2018 Carlos Donizete Froes [a.k.a coringao]
+* Copyright (c) 1999-2019 Jagex Games Ltd.
+* Copyright (c) 2016-2019 Carlos Donizete Froes [a.k.a coringao]
