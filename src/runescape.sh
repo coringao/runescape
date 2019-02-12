@@ -7,7 +7,7 @@
 #
 # Script Name:	runescape.sh
 # Update Date:	February/2019
-# Edited version: '0.4'
+# Edited version: '0.5'
 #
 # Download Client - Old School Runescape
 LINK="https://oldschool.runescape.com/downloads/jagexappletviewer.jar"
