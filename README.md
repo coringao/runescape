@@ -42,18 +42,16 @@ Uninstall:
 License
 =======
 
-> Runescape.sh: Copyright (c) 2016-2019 Carlos Donizete Froes [a.k.a coringao].
->
-> Use of this script is governed by a BSD 2-clause license that can be found
-> in the LICENSE file. We encourage new contributors to distribute files
-> under this license. Source code and contact info at
-> https://gitlab.com/coringao/runescape.
-
-> Game Terms and Conditions: Copyright (c) 1999-2019, Jagex Ltd.
->
-> Use of this website is subject to our Terms & Conditions[1],
-> Privacy Policy[2] and Cookie Policy[3].
->
+> Game Terms and Conditions: Use of this website is subject
+> to our Terms & Conditions[1], Privacy Policy[2] and Cookie Policy[3].
 > * [1] https://www.jagex.com/terms
 > * [2] https://www.jagex.com/terms/privacy
 > * [3] https://www.jagex.com/terms/cookies
+>
+> Runescape.sh file: Use of this script is governed by a BSD 2-clause license
+> that can be found in the LICENSE file. We encourage new contributors
+> to distribute files under this license. Source code and contact info at
+> https://gitlab.com/coringao/runescape.
+
+* Copyright (c) 1999-2019, Jagex Ltd.
+* Copyright (c) 2016-2019, Carlos Donizete Froes [a.k.a coringao]
