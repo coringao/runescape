@@ -4,7 +4,7 @@ version: 0.6
     - Added user.home system property to runescape directory
     - Date updated and edited version changed
   * Version removed from makefile file
-  * Game terms and conditions added to readme.md file
+  * Terms and conditions of game edited to readme.md file
 
 version: 0.5
   * Replaced by official game name and icon
