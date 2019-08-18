@@ -1,3 +1,11 @@
+version: 0.6
+  * Improvements to the executable script:
+    - Added game terms and conditions
+    - Added user.home system property to runescape directory
+    - Date updated and edited version changed
+  * Version removed from makefile file
+  * Game terms and conditions added to readme.md file
+
 version: 0.5
   * Replaced by official game name and icon
   * Updated copyright years
