@@ -5,9 +5,17 @@
 #	that can be found in the LICENSE file.
 #	Source code and contact info at https://gitlab.com/coringao/runescape
 #
+#	Game Terms and Conditions: Copyright (c) 1999-2019, Jagex Ltd
+#	Use of this website is subject to our Terms & Conditions[1],
+#	Privacy Policy[2] and Cookie Policy[3].
+#
+#	[1] https://www.jagex.com/terms
+#	[2] https://www.jagex.com/terms/privacy
+#	[3] https://www.jagex.com/terms/cookies
+#
 # Script Name:	runescape.sh
-# Update Date:	February/2019
-# Edited version: '0.5'
+# Update Date:	August/2019
+# Edited version: '0.6'
 #
 # Download Client - Old School Runescape
 LINK="https://oldschool.runescape.com/downloads/jagexappletviewer.jar"
@@ -28,9 +36,9 @@ if [ ! -d $GAME ]; then
 	mv jagexappletviewer.jar $GAME
 fi
 
-# Running the game
-	java --add-opens java.base/java.lang=ALL-UNNAMED -Xmx512m -Xms512m \
-	-Djava.class.path="$GAME/jagexappletviewer.jar" \
+# Preparing sandbox environment and running the game
+	java -Duser.home="$GAME" --add-opens java.base/java.lang=ALL-UNNAMED \
+	-Xmx512m -Xms512m -Djava.class.path="$GAME/jagexappletviewer.jar" \
 	-Dcom.jagex.config=http://oldschool.runescape.com/jav_config.ws \
 	jagexappletviewer "$GAME" > /dev/null 2>&1
 
