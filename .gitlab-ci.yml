@@ -1,11 +1,10 @@
 stages:
   - build
   - test
-  - deploy
 
 before_script:
-  script:
-  - apt install default-jre make wget
+  - apt update -y
+  - apt install default-jre make wget -y
 
 run build:
   stage: build
@@ -14,7 +13,3 @@ run build:
 run test:
   stage: test
   script: make test
-
-run deploy:
-  stage: deploy
-  script: make deploy
