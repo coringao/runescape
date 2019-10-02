@@ -1,0 +1,19 @@
+stages:
+  - build
+  - test
+  - deploy
+
+before_script:
+  - apt install default-jre make wget
+
+run 1:
+  stage: build
+  script: make build dependencies
+
+run 2:
+  stage: test
+  script: make test
+
+run 3:
+  stage: deploy
+  script: make deploy
