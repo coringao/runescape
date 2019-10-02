@@ -1,14 +1,9 @@
 stages:
-  - build
   - test
 
 before_script:
   - apt update -y
   - apt install default-jre make wget -y
-
-run build:
-  stage: build
-  script: make build dependencies
 
 run test:
   stage: test
