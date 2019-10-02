@@ -4,16 +4,17 @@ stages:
   - deploy
 
 before_script:
+  script:
   - apt install default-jre make wget
 
-run 1:
+run build:
   stage: build
   script: make build dependencies
 
-run 2:
+run test:
   stage: test
   script: make test
 
-run 3:
+run deploy:
   stage: deploy
   script: make deploy
