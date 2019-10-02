@@ -7,4 +7,4 @@ before_script:
 
 run test:
   stage: test
-  script: make test
+  script: make
